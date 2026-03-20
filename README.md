@@ -4,6 +4,10 @@ An educational resource covering the theory of Galois Fields (finite fields) and
 
 **Author**: Brendan Lynskey 2025
 
+## ▶ [Open the Presentation](https://brendanjameslynskey.github.io/Galois_Fields/)
+
+> **Setup:** Enable GitHub Pages (Settings → Pages → Deploy from `main` branch, `/ (root)` directory).
+
 ---
 
 ## Overview
