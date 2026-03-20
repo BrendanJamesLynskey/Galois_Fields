@@ -1,0 +1,12 @@
+/* Custom overrides for Galois Fields presentation */
+/* Main styles are defined inline in index.html */
+
+/* Additional print styles */
+@media print {
+    .reveal .slides section {
+        page-break-after: always;
+    }
+    .reveal .slide-background {
+        background: #0a0a0f !important;
+    }
+}
