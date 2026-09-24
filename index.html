@@ -21,28 +21,28 @@
 
     <style>
         :root {
-            --navy: #0D1B2A;
-            --slate: #1B2838;
-            --teal: #00B4D8;
-            --mint: #48CAE4;
-            --gold: #FFB703;
-            --cream: #E0E1DD;
-            --dim: #8D99AE;
-            --card: #162230;
-            --code-bg: #0A1018;
-            --red: #E63946;
-            --green: #06D6A0;
+            --navy: #2e3b36;
+            --slate: #40514a;
+            --teal: #9dc8db;
+            --mint: #afd8e7;
+            --gold: #f1de8b;
+            --cream: #e3e4dc;
+            --dim: #a1afa7;
+            --card: #384741;
+            --code-bg: #27332e;
+            --red: #d36e54;
+            --green: #a7dda3;
         }
 
         .reveal-viewport { background: var(--navy); }
         .reveal { font-family: 'DM Sans', sans-serif; color: var(--cream); font-size: 22px; }
-        .reveal h1, .reveal h2, .reveal h3 { font-family: 'Playfair Display', serif; color: #fff; text-transform: none; letter-spacing: -0.01em; }
+        .reveal h1, .reveal h2, .reveal h3 { font-family: 'Playfair Display', serif; color: #f7f6f0; text-transform: none; letter-spacing: -0.01em; }
         .reveal h1 { font-size: 2.4em; font-weight: 900; }
         .reveal h2 { font-size: 1.7em; font-weight: 700; margin-bottom: 0.6em; }
         .reveal h3 { font-size: 1.2em; font-weight: 700; color: var(--teal); }
         .reveal code, .reveal pre code { font-family: 'JetBrains Mono', monospace; }
         .reveal pre { box-shadow: none; width: 100%; }
-        .reveal pre code { padding: 1em; border-radius: 8px; font-size: 0.58em; line-height: 1.5; background: var(--code-bg); border: 1px solid rgba(0,180,216,0.15); }
+        .reveal pre code { padding: 1em; border-radius: 8px; font-size: 0.58em; line-height: 1.5; background: var(--code-bg); border: 1px solid rgba(157,200,219,0.15); }
         .reveal .slide-number { font-family: 'JetBrains Mono', monospace; font-size: 0.7em; color: var(--dim); }
         .reveal section { text-align: left; }
         .reveal .slides > section { padding: 0.5em; overflow-y: auto !important; align-items: flex-start !important; justify-content: flex-start !important; }
@@ -76,7 +76,7 @@
             padding: 1em 1.2em;
             margin: 0.4em 0;
             border-left: 3px solid var(--teal);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 20px rgba(26,35,32,0.3);
         }
         .card.gold-border { border-left-color: var(--gold); }
         .card.green-border { border-left-color: var(--green); }
@@ -96,7 +96,7 @@
         /* Tables */
         .reveal table { border-collapse: collapse; width: 100%; font-size: 0.65em; margin: 0.5em 0; }
         .reveal table th { background: var(--teal); color: var(--navy); padding: 0.5em 0.7em; text-align: left; font-weight: 700; }
-        .reveal table td { background: var(--card); padding: 0.5em 0.7em; border-bottom: 1px solid rgba(255,255,255,0.05); vertical-align: top; }
+        .reveal table td { background: var(--card); padding: 0.5em 0.7em; border-bottom: 1px solid rgba(247,246,240,0.05); vertical-align: top; }
         .reveal table td:first-child { color: var(--gold); font-weight: 600; }
 
         /* Definition box */
@@ -124,10 +124,10 @@
             font-size: 0.6em;
             font-weight: 600;
         }
-        .pill.teal { background: rgba(0,180,216,0.15); color: var(--teal); }
-        .pill.gold { background: rgba(255,183,3,0.15); color: var(--gold); }
-        .pill.green { background: rgba(6,214,160,0.15); color: var(--green); }
-        .pill.red { background: rgba(230,57,70,0.15); color: var(--red); }
+        .pill.teal { background: rgba(157,200,219,0.15); color: var(--teal); }
+        .pill.gold { background: rgba(241,222,139,0.15); color: var(--gold); }
+        .pill.green { background: rgba(167,221,163,0.15); color: var(--green); }
+        .pill.red { background: rgba(211,110,84,0.15); color: var(--red); }
 
         /* Insight banner */
         .insight-banner {
@@ -244,13 +244,13 @@
 
         /* TOC list */
         .toc-list { list-style: none; padding: 0; }
-        .toc-list li { padding: 0.25em 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.7em; }
+        .toc-list li { padding: 0.25em 0; border-bottom: 1px solid rgba(247,246,240,0.05); font-size: 0.7em; }
         .toc-list li:last-child { border-bottom: none; }
         .toc-num { color: var(--gold); font-family: 'JetBrains Mono', monospace; font-weight: 700; margin-right: 0.5em; }
 
         /* Reference list */
         .ref-list { list-style: none; padding: 0; }
-        .ref-list li { font-size: 0.58em; padding: 0.2em 0; color: var(--dim); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .ref-list li { font-size: 0.58em; padding: 0.2em 0; color: var(--dim); border-bottom: 1px solid rgba(247,246,240,0.05); }
         .ref-list li:last-child { border-bottom: none; }
         .ref-list a { color: var(--teal); text-decoration: none; }
 
@@ -430,7 +430,7 @@
                                 <line x1="20" y1="45" x2="70" y2="45" stroke="var(--dim)" stroke-width="2"/>
                                 <line x1="20" y1="95" x2="70" y2="95" stroke="var(--dim)" stroke-width="2"/>
                                 <path d="M 70 25 Q 90 70 70 115" fill="none" stroke="var(--green)" stroke-width="2"/>
-                                <path d="M 80 25 Q 100 30 140 70 Q 100 110 80 115 Q 100 70 80 25" fill="rgba(6,214,160,0.08)" stroke="var(--green)" stroke-width="2.5"/>
+                                <path d="M 80 25 Q 100 30 140 70 Q 100 110 80 115 Q 100 70 80 25" fill="rgba(167,221,163,0.08)" stroke="var(--green)" stroke-width="2.5"/>
                                 <line x1="140" y1="70" x2="200" y2="70" stroke="var(--dim)" stroke-width="2"/>
                                 <text x="10" y="49" font-family="JetBrains Mono, monospace" font-size="14" fill="var(--cream)">A</text>
                                 <text x="10" y="99" font-family="JetBrains Mono, monospace" font-size="14" fill="var(--cream)">B</text>
@@ -445,7 +445,7 @@
                             <svg width="240" height="120" viewBox="0 0 260 140">
                                 <line x1="20" y1="45" x2="80" y2="45" stroke="var(--dim)" stroke-width="2"/>
                                 <line x1="20" y1="95" x2="80" y2="95" stroke="var(--dim)" stroke-width="2"/>
-                                <path d="M 80 25 L 110 25 Q 150 25 150 70 Q 150 115 110 115 L 80 115 Z" fill="rgba(0,180,216,0.08)" stroke="var(--teal)" stroke-width="2.5"/>
+                                <path d="M 80 25 L 110 25 Q 150 25 150 70 Q 150 115 110 115 L 80 115 Z" fill="rgba(157,200,219,0.08)" stroke="var(--teal)" stroke-width="2.5"/>
                                 <line x1="150" y1="70" x2="200" y2="70" stroke="var(--dim)" stroke-width="2"/>
                                 <text x="10" y="49" font-family="JetBrains Mono, monospace" font-size="14" fill="var(--cream)">A</text>
                                 <text x="10" y="99" font-family="JetBrains Mono, monospace" font-size="14" fill="var(--cream)">B</text>
